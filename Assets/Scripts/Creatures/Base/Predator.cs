@@ -11,13 +11,11 @@ public class Predator : MonoBehaviour, ICreature
     public int Age { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     public int PopulationMax { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
