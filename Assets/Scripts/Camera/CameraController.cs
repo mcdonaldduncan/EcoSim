@@ -211,6 +211,7 @@ public class CameraController : Singleton<CameraController>
     void MouseWheelZoom()
     {
         float scroll = Input.GetAxis("Mouse ScrollWheel");
+
         if (transform.position.y <= 15 && scroll > 0 || transform.position.y >= 100 && scroll < 0)
             return;
 

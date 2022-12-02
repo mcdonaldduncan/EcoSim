@@ -159,8 +159,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &8510806
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1117,8 +1117,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 5
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &183747513
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2188,7 +2188,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &372638260
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2512,7 +2512,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &404865368
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2770,7 +2770,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &427567786
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2930,7 +2930,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &457990855
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3340,8 +3340,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &533451049
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3480,8 +3480,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &541631909
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4389,7 +4389,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &795118205
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4516,7 +4516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0390e780a2f1c9458bbddda0917ebb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 5
 --- !u!114 &809040640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4611,7 +4611,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &823668525
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5511,8 +5511,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &962191215
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5749,8 +5749,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &1028507864
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7035,8 +7035,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &1144935524
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8749,7 +8749,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &1483389231
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9465,7 +9465,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &1627183523
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9609,8 +9609,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &1642267951
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9749,8 +9749,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &1652541167
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9999,7 +9999,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &1669852150
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10781,7 +10781,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &1784640564
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10831,8 +10831,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &1855570840
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10971,8 +10971,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &1855798794
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11111,8 +11111,8 @@ MonoBehaviour:
   m_HidableLayers:
     serializedVersion: 2
     m_Bits: 1
-  m_Sensitivity: -0.25
-  m_MinDistance: 8
+  m_Sensitivity: -0.5
+  m_MinDistance: 10
 --- !u!195 &1860645978
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11623,7 +11623,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &1930483826
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11881,7 +11881,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  FOV: 360
+  FOV: 180
 --- !u!135 &1954564564
 SphereCollider:
   m_ObjectHideFlags: 0

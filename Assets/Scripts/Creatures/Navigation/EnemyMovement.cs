@@ -23,6 +23,8 @@ public class EnemyMovement : MonoBehaviour
     Collider[] m_Colliders = new Collider[10];
     WaitForSeconds m_Wait = new WaitForSeconds(.15f);
 
+    Transform playerT;
+
     private void Awake()
     {
         m_Agent = GetComponent<NavMeshAgent>();
@@ -41,13 +43,21 @@ public class EnemyMovement : MonoBehaviour
         m_LineOfSightChecker.OnLoseSight -= HandleSightLost;
     }
 
+    private void Update()
+    {
+        return;
+        if (playerT == null) return;
+        
+        transform.LookAt(playerT);
+    }
+
     void HandleSightGain(Transform target)
     {
         if (m_MovementCoroutine != null)
         {
             StopCoroutine(m_MovementCoroutine);
         }
-
+        playerT = target;
         m_MovementCoroutine = StartCoroutine(Hide(target));
     }
 
@@ -57,6 +67,7 @@ public class EnemyMovement : MonoBehaviour
         {
             StopCoroutine(m_MovementCoroutine);
         }
+        playerT = null;
     }
 
     private IEnumerator Hide(Transform target)

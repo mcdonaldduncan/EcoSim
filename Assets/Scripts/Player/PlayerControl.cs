@@ -10,6 +10,8 @@ public class PlayerControl : MonoBehaviour
     static EcoSim _input;
     Vector3 moveValue;
 
+    float moveModifier = 1;
+
     private void Awake()
     {
         _input = new EcoSim();
@@ -21,12 +23,17 @@ public class PlayerControl : MonoBehaviour
         _input.Player.Enable();
         _input.Player.Move.performed += HandleMovement;
         _input.Player.Move.canceled += HandleMovement;
+        _input.Player.Modifier.performed += HandleModifier;
+        _input.Player.Modifier.canceled += HandleModifier;
+        _input.Player.Modifier.started += HandleModifier;
     }
 
     private void OnDisable()
     {
         _input.Player.Move.performed -= HandleMovement;
         _input.Player.Move.canceled -= HandleMovement;
+        _input.Player.Modifier.performed -= HandleModifier;
+        _input.Player.Modifier.canceled -= HandleModifier;
         _input.Player.Disable();
     }
 
@@ -35,6 +42,13 @@ public class PlayerControl : MonoBehaviour
     {
         if (moveValue == Vector3.zero) return;
         transform.Translate(Time.deltaTime * moveSpeed * moveValue);
+    }
+
+    void HandleModifier(InputAction.CallbackContext context)
+    {
+
+        moveModifier = context.performed ? 2f : 1f;
+        Debug.Log($"Modified to {moveModifier}");
     }
 
     void HandleMovement(InputAction.CallbackContext context)
