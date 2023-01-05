@@ -22,8 +22,15 @@ public class SurvivalRequirement
         CurrentValue += incrementBy;
     }
 
-    public NeedState SetState()
+    public NeedState GetState()
+    {
+        return State;
+    }
+
+    private NeedState SetState()
     {
         return (NeedState)MathF.Floor(CurrentValue/StateThreshold);
     }
+
+
 }

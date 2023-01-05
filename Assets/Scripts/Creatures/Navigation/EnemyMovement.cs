@@ -45,7 +45,6 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
-        return;
         if (playerT == null) return;
         
         transform.LookAt(playerT);
@@ -109,6 +108,8 @@ public class EnemyMovement : MonoBehaviour
 
     private bool HideAttempt(Transform target, Vector3 attempt, int i, int mod, int iterations)
     {
+        
+
         if (NavMesh.SamplePosition(m_Colliders[i].transform.position - attempt * mod, out NavMeshHit hit, 4f, m_Agent.areaMask))
         {
             if (!NavMesh.FindClosestEdge(hit.position, out hit, m_Agent.areaMask))
@@ -131,7 +132,6 @@ public class EnemyMovement : MonoBehaviour
     private bool ProcessHideAttempt(NavMeshHit hit, Vector3 target, int iterations)
     {
         if (iterations >= 3) return false;
-
         if (Vector3.Dot(hit.normal, target) < m_Sensitivity)
         {
             m_Agent.SetDestination(hit.position);
